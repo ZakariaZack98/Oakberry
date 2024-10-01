@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--clr-text);
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+button a {
+  color: white;
+  font-weight: bold;
+}
+:root {
+  --clr-bg: #f7f7f7;
+  --clr-text: #323232;
+  --clr-text-faded: #999999;
+  --clr-accent: #5ea51d;
+  --border-red: 1px solid red;
+  --trn-delay: ease-in 0.3s;
+  --box-shd: 0 0 20px 20px rgba(0, 0, 0, 0.24);
+}
+/* ===========Typography============ */
+.smallerText {
+  font-size: 14px;
+}
+/* ============modifier============ */
+.btn {
+  background-color: var(--clr-accent);
+  border: none;
+}
+.btn:hover {
+  background-color: #3b6812;
+}
+#navbar {
+  height: 0px;
+  z-index: 999;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.466);
+  padding: 1rem 0;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+.carousel,
+.slide,
+.carousel img {
+  height: 100dvh;
+}
+.carousel {
+  position: relative;
+}
+.carousel::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.349);
+  z-index: 1;
+}
+.carousel-indicators {
+  margin-bottom: 100px;
+}
+.carousel-caption {
+  max-width: 45%;
+  margin-bottom: 22dvh;
+  text-shadow: 0 0 20px black;
+  z-index: 2;
+}
+.carouselHeader {
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+}
+.carousel-caption p {
+  color: rgba(255, 255, 255, 0.712);
+}
+.btnXL {
+  border: none;
+  padding: 0.7rem 3rem;
+  background-color: var(--clr-accent);
+  transition: var(--trn-delay);
+}
+.btnXL:hover {
+  background-color: #3b6812;
+}
+/* ==============Tabs=============== */
+#tabs {
+  transform: translateY(-120px);
+  z-index: 3;
+  position: relative;
+}
+#tabs .nav-pills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+#tabs .nav-link {
+  padding: 1rem 3rem;
+  background-color: var(--clr-accent);
+  color: white;
+  border-radius: 0px;
+}
+#tabs .active:focus {
+  background-color: var(--clr-bg);
+  color: var(--clr-accent);
+}
+.tab-content {
+  width: 75%;
+  margin: 0 auto;
+  background-color: white;
+  transform: translateY(-17px);
+}
+.tabContentItem {
+  border-right: 1px solid rgba(0, 0, 0, 0.158);
+}
+.tabContentItem p,
+.tabContentItem i {
+  transform: translateX(-10px);
+}
+.tabDropdown {
+  background-color: transparent;
+  color: var(--clr-text-faded);
+}
+.tabDropdown:hover {
+  background-color: transparent;
+  color: var(--clr-text-faded);
+}
+.tabDropdown:focus {
+  background-color: transparent;
+  color: var(--clr-text-faded);
+}
+.dropdown-item {
+  color: var(--clr-text-faded);
+}
+/* =============Category============= */
+#category {
+  padding-bottom: 100px;
+}
+.categoryHead * {
+  font-weight: 700;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.categoryHead__header {
+  font-size: 60px;
+}
+.categoryBodyItem {
+  width: 250px;
+  height: 250px;
+  background-color: var(--clr-bg);
+  text-align: center;
+  cursor: pointer;
+}
+.categoryBodyItem:hover {
+  background-color: var(--clr-accent);
+}
+.categoryBodyItem:hover i {
+  color: white;
+  transition: 0.5s ease;
+}
+.categoryBodyItem:hover h4 {
+  color: white;
+  transition: 0.5s ease;
+}
+.categoryBodyItem i {
+  font-size: 60px;
+  transform: translateX(0px);
+}
+.categoryBottom {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.categoryBottomRow {
+  border-bottom: 1px solid var(--clr-text-faded);
+}
+.btnCat {
+  background-color: var(--clr-bg);
+  color: var(--clr-accent);
+}
+.btnCat:hover {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .carousel-caption {
+    max-width: 85%;
+  }
+  .carouselHeader {
+    font-size: 40px;
+  }
+  .categoryHead * {
+    max-width: 90%;
+  }
+  .categoryHead h1 {
+    font-size: 30px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .categoryBodyItem {
+    width: 100%;
+  }
+  .categoryBottom {
+    max-width: 100%;
+  }
+}

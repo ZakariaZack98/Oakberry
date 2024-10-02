@@ -8,6 +8,7 @@
 body {
   font-family: "Nunito Sans", sans-serif;
   color: var(--clr-text);
+  overflow-x: hidden;
 }
 ol,
 ul,
@@ -302,24 +303,222 @@ button a {
   height: 400px;
 }
 /* ============Clients=============== */
+#clients {
+  background-color: var(--clr-bg);
+  padding: 80px 0;
+
+}
 #clients .carousel {
-  width: 75%;
-  height: 50dvh;
+  width: 95%;
+  height: fit-content;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.carousel::before {
+  background-color: transparent;
+}
+.reviewCard {
+  width: 450px;
+  height: 300px;
+  position: relative;
+  padding: 3rem;
+  background-color: white;
+  z-index: 999;
+  overflow: hidden;
+}
+.reviewCard__quote {
+  background-color: var(--clr-accent);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  transform: translateY(0px);
+  opacity: 0.2;
+  scale: 8;
+}
+.reviewCard__quote p{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transform: translateX(10px);
+}
+.reviewCardClient__pic img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+#clients .carousel-control-prev {
+  transform: translateX(-50px);
+  height: 300px;
+
+}
+#clients .carousel-control-next {
+  transform: translateX(50px);
+
+  height: 300px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  padding: 1rem;
+  background-color: var(--clr-accent);
+  border-radius: 50%;
+}
+/* =============Agents=============== */
+#agents {
+  position: relative;
+  overflow-x: hidden;
+}
+.agentsBG {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: #050D21;
+  z-index: 0;
+  top: 0;
+}
+.agentsWrapper {
+  padding: 100px 0;
+  z-index: 1;
+  position: relative;
+  max-width: 95%;
   margin: 0 auto;
 }
+#agents .card-body {
+  background-color: var(--clr-accent);
+  color: white;
+}
+#agents .fadedText {
+  color: white;
+}
+#agents .cardPropertyOwner * {
+  font-size: 12px;
+  color: white;
+}
+#agents .card {
+  position: relative;
+}
+#agents .card img {
+  height: 250px;
+}
+#agents .cardPicture {
+  height: 250px;
+}
+.socials a {
+  color: white;
+  padding: 6px 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.219);
+  transition: var(--trn-delay);
+}
+.socials a:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.548);
+}
+#agents h2 {
+  height: 120px;
+}
+.socials {
+  position: absolute;
+  bottom: 20px;
+}
+/* ================Blog=============== */
+#blog {
+  padding: 100px 0;
+  background-color: var(--clr-bg);
+  overflow-x: hidden;
+}
+.blogContents {
+  width: 75%;
+  margin: 0 auto;
+}
+#blog .card {
+  border: none;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.103);
+  cursor: pointer;
+}
 
+#blog .card-title {
+  font-weight: 700;
+  color: var(--clr-accent);
+}
+#blog .card-text {
+  color: var(--clr-text-faded);
+}
+/* ================album============= */
+#album {
+  width: 100dvw;
+  overflow-x: hidden;
+}
+.albumWrapper img{
+  height: 300px;
+}
+.albumPic{
+  transition: var(--trn-delay);
+  cursor: pointer;
+  height: 300px;
+}
+.albumPic__overlay i {
+  font-size: 2rem;
+  color: var(--clr-accent);
+  opacity: 0;
+}
+.albumPic:hover img{
+  filter: brightness(0.5);
+  transition: 1s ease;
+}
+.albumPic:hover i {
+  opacity: 1;
+}
+/* ============footer=============== */
+#footer {
+  background-color: #06112A;
+  padding: 100px 0;
+  color: white;
+}
+.footerWrapper {
+  align-items: baseline;
+  width: 100%;
+}
+.footerLinks {
+  align-items: baseline;
+}
+.footerLinks h5{
+  font-weight: 900;
+}
+.footerLinksSection {
+  width: 25%;
+}
+.footerLinksSection h5 {
+  margin-bottom: 20px;
+}
+.footerLinksSection ul {
+  transform: translateX(-30px);
+  margin-top: 1rem;
+}
+.footerAbout {
+  max-width: 25%;
+}
+.footerLinksSection i {
+  color: var(--clr-accent);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
 
-
+.footerLinksSection a span:hover {
+  color: var(--clr-accent);
+}
+/* ========================================================================================================================= */
 @media (max-width: 900px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
   .carousel-caption {
     max-width: 85%;
   }
   .carouselHeader {
     font-size: 40px;
   }
-  /* .categoryHead * {
-    max-width: 90%;
-  } */
   .sectionHeader{
     max-width: 90%;
     font-size: 30px;
@@ -337,5 +536,32 @@ button a {
   }
   .card {
     width: 100%;
+  }
+  #agents .card {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  #agents {
+    width: 100dvw;
+    overflow-x: hidden;
+  }
+  #agents .card img {
+  height: 350px;
+  }
+  #agents .cardPicture {
+  height: 350px;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    display: none;
+  }
+  .footerAbout {
+    padding: 3rem;
+  }
+  .footerLinksSection {
+    width: 100%;
+    padding: 3rem;
+  }
+  .footerLinks {
+    row-gap: 2rem;
   }
 }

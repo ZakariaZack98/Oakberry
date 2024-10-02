@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Oakberry - Home</title>
 </head>
@@ -303,7 +302,7 @@
                 <div class="featuredWrapper">
                     <div class="featuredHead sectionHead text-center" data-aos="fade-up" data-aos-duration="1000">
                         <h6 class="categoryHead__subHeader  text-uppercase sectionSubHeader">Our Properties</h6>
-                        <h1 class="sectionHeader">Featured Properties</h1>
+                        <h1 class="sectionHeader my-0 mx-auto">Featured Properties</h1>
                     </div>
                     <div class="featuredContents my-5 mx-auto">
                         <div class="card-group gap-4">
@@ -506,24 +505,434 @@
         <!-- ==============================About Us Markup============================= -->
         <!-- ==============================Client Markup============================= -->
         <section id="clients">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="clientsWrapper">
                     <div class="clientsHead my-5 text-center" data-aos="fade-up" data-aos-duration="500">
                         <p class="sectionSubHeader">testimonial</p>
                         <h1 class="sectionHeader my-0 mx-auto">Clients we helped</h1>
                     </div>
                     <div class="clientsBody">
-                        
+                        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3 mt-2   active">
+                                    <div class="reviewCard shadow-lg d-flex flex-column justify-content-between align-items-start ">
+                                        <div class="reviewCard__quote">
+                                            <p>"</p>
+                                        </div>
+                                        <p class="reviewCard__summery fadedText">
+                                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                        </p>
+                                        <div class="reviewCardClient d-flex align-items-center gap-4">
+                                            <picture class="reviewCardClient__pic">
+                                                <img src="images/person_1.jpeg" alt="">
+                                            </picture>
+                                            <div class="reviewCardClientName">
+                                                <h3>Chris Stevenson</h3>
+                                                <h6 class="sectionSubHeader">marketing manager</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviewCard shadow-lg d-flex flex-column justify-content-between align-items-start ">
+                                        <div class="reviewCard__quote">
+                                            <p>"</p>
+                                        </div>
+                                        <p class="reviewCard__summery fadedText">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut adipisci voluptate dolorem cupiditate nostrum, laboriosam cum. Temporibus impedit laudantium quia doloremque qui rerum, quis perferendis sequi, voluptate, velit nam?
+                                        </p>
+                                        <div class="reviewCardClient d-flex align-items-center gap-4">
+                                            <picture class="reviewCardClient__pic">
+                                                <img src="images/person_2.jpeg" alt="">
+                                            </picture>
+                                            <div class="reviewCardClientName">
+                                                <h3>Chris Stevenson</h3>
+                                                <h6 class="sectionSubHeader">marketing manager</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3 mt-2  ">
+                                    <div class="reviewCard shadow-lg d-flex flex-column justify-content-between align-items-start ">
+                                        <div class="reviewCard__quote">
+                                            <p>"</p>
+                                        </div>
+                                        <p class="reviewCard__summery fadedText">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt cupiditate hic laborum quas ipsum atque tempore repellat quia alias.
+                                        </p>
+                                        <div class="reviewCardClient d-flex align-items-center gap-4">
+                                            <picture class="reviewCardClient__pic">
+                                                <img src="images/person_3.jpeg" alt="">
+                                            </picture>
+                                            <div class="reviewCardClientName">
+                                                <h3>John Doe</h3>
+                                                <h6 class="sectionSubHeader">marketing manager</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviewCard shadow-lg d-flex flex-column justify-content-between align-items-start ">
+                                        <div class="reviewCard__quote">
+                                            <p>"</p>
+                                        </div>
+                                        <p class="reviewCard__summery fadedText">
+                                            Far Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim, beatae dicta eaque delectus quaerat voluptatibus ad voluptas labore, fugit tempora nulla cumque reprehenderit!
+                                            texts.
+                                        </p>
+                                        <div class="reviewCardClient d-flex align-items-center gap-4">
+                                            <picture class="reviewCardClient__pic">
+                                                <img src="images/person_1.jpeg" alt="">
+                                            </picture>
+                                            <div class="reviewCardClientName">
+                                                <h3>John Doe</h3>
+                                                <h6 class="sectionSubHeader">marketing manager</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3 mt-2  ">
+                                    <div class="reviewCard shadow-lg d-flex flex-column justify-content-between align-items-start ">
+                                        <div class="reviewCard__quote">
+                                            <p>"</p>
+                                        </div>
+                                        <p class="reviewCard__summery fadedText">
+                                            Far far away, behind the word mountains, far from the coulorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores pariatur saepe minima beatae, ipsa, debitis placeat facilis porro nulla reprehenderit temporibus.
+                                            texts.
+                                        </p>
+                                        <div class="reviewCardClient d-flex align-items-center gap-4">
+                                            <picture class="reviewCardClient__pic">
+                                                <img src="images/person_2.jpeg" alt="">
+                                            </picture>
+                                            <div class="reviewCardClientName">
+                                                <h3>John Doe</h3>
+                                                <h6 class="sectionSubHeader">marketing manager</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviewCard shadow-lg d-flex flex-column justify-content-between align-items-start ">
+                                        <div class="reviewCard__quote">
+                                            <p>"</p>
+                                        </div>
+                                        <p class="reviewCard__summery fadedText">
+                                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+                                            texts.
+                                        </p>
+                                        <div class="reviewCardClient d-flex align-items-center gap-4">
+                                            <picture class="reviewCardClient__pic">
+                                                <img src="images/person_3.jpeg" alt="">
+                                            </picture>
+                                            <div class="reviewCardClientName">
+                                                <h3>John Doe</h3>
+                                                <h6 class="sectionSubHeader">marketing manager</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ==============================Client Markup============================= -->
+        <!-- ==============================Agents Markup============================= -->
+        <section id="agents">
+
+            <div class="agentsWrapper">
+                <div class="agentsHead ms-5">
+                    <h6 class="sectionSubHeader">Meet our agents</h6>
+                    <h1 class="sectionHeader text-white">Our Agents</h1>
+                </div>
+                <div class="agentsBody">
+                    <!-- *************** COPIED FROM FEATURED ****************** -->
+                    <div class="featuredContents my-5 mx-auto">
+                        <div class="card-group gap-4">
+                            <div class="card shadow-lg border-0" data-aos="fade-left">
+                                <div class="cardPicture position-relative">
+                                    <img src="images/team-1.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="cardBodyTop d-flex justify-content-between align-items-center">
+                                        <div class="cardPropertyOwner d-flex justify-content-beetween gap-4 my-2">
+                                            <p><strong>LISTING</strong></p>
+                                            <p><strong>1000 PROPERTIES</strong></p>
+                                        </div>
+                                    </div>
+                                    <h2>Mike Max</h2>
+
+                                    <div class="cardFooter ">
+                                        <div class="socials mt-4 d-flex gap-3 align-items-center ">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow-lg border-0" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                                <div class="cardPicture position-relative">
+                                    <img src="images/team-2.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="cardBodyTop d-flex justify-content-between align-items-center">
+                                        <div class="cardPropertyOwner d-flex justify-content-beetween gap-4 my-2">
+                                            <p><strong>LISTING</strong></p>
+                                            <p><strong>720 PROPERTIES</strong></p>
+                                        </div>
+                                    </div>
+                                    <h2>Tom Miller</h2>
+
+                                    <div class="cardFooter ">
+                                        <div class="socials mt-4 d-flex gap-3 align-items-center ">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow-lg border-0" data-aos="fade-left" data-aos-duration="500" data-aos-delay="400">
+                                <div class="cardPicture position-relative">
+                                    <img src="images/team-3.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="cardBodyTop d-flex justify-content-between align-items-center">
+                                        <div class="cardPropertyOwner d-flex justify-content-beetween gap-4 my-2">
+                                            <p><strong>LISTING</strong></p>
+                                            <p><strong>440 PROPERTIES</strong></p>
+                                        </div>
+                                    </div>
+                                    <h2>Mitchella Johnson</h2>
+
+                                    <div class="cardFooter ">
+                                        <div class="socials mt-4 d-flex gap-3 align-items-center ">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow-lg border-0" data-aos="fade-left" data-aos-duration="500" data-aos-delay="600">
+                                <div class="cardPicture position-relative">
+                                    <img src="images/team-4.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="cardBodyTop d-flex justify-content-between align-items-center">
+                                        <div class="cardPropertyOwner d-flex justify-content-beetween gap-4 my-2">
+                                            <p><strong>LISTING</strong></p>
+                                            <p><strong>722 PROPERTIES</strong></p>
+                                        </div>
+                                    </div>
+                                    <h2>Carolina Baker</h2>
+
+                                    <div class="cardFooter ">
+                                        <div class="socials mt-4 d-flex gap-3 align-items-center ">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *************** COPIED FROM FEATURED ****************** -->
+                </div>
+            </div>
+            <div class="agentsBG"></div>
+            </div>
+        </section>
+        <!-- ==============================Agents Markup============================= -->
+        <!-- ==============================Blog Markup============================= -->
+        <section id="blog">
+            <div class="blogWrapper">
+                <div class="blogHead text-center">
+                    <h6 class="sectionSubHeader">recent blogs</h6>
+                    <h1 class="sectionHeader my-0 mx-auto">Recent Blogs</h1>
+                </div>
+                <div class="blogContents">
+                    <div class="card-group gap-4 my-4">
+                        <div class="card shadow-md" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="images/image_1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">New Home Sales Picked Up in December</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">3 days ago</small>
+                            </div>
+                        </div>
+                        <div class="card shadow-md" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/image_2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">New Home Sales Picked Up in December</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quae in sit, necessitatibus nulla minima qui ipsum dolore id laborum.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">23 July 2023</small>
+                            </div>
+                        </div>
+                        <div class="card shadow-md" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="images/image_3.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">New Home Sales Picked Up in December</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This card has even longer content than the first to show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">22 Aug 2023</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==============================Blog Markup============================= -->
+        <!-- ==============================Album Markup============================= -->
+        <section id="album">
+            <div class="albumWrapper row ">
+                <picture class="albumPic col-lg-2 col-md-4 col-6 position-relative" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="images/gallery-1.jpeg" alt="">
+                    <div class="albumPic__overlay position-absolute top-50 start-50   "><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </picture>
+                <picture class="albumPic col-lg-2 col-md-4 col-6 position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="images/gallery-2.jpeg" alt="">
+                    <div class="albumPic__overlay position-absolute top-50 start-50   "><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </picture>
+                <picture class="albumPic col-lg-2 col-md-4 col-6 position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <img src="images/gallery-3.jpeg" alt="">
+                    <div class="albumPic__overlay position-absolute top-50 start-50   "><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </picture>
+                <picture class="albumPic col-lg-2 col-md-4 col-6 position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <img src="images/gallery-4.jpeg" alt="">
+                    <div class="albumPic__overlay position-absolute top-50 start-50   "><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </picture>
+                <picture class="albumPic col-lg-2 col-md-4 col-6 position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="images/gallery-5.jpeg" alt="">
+                    <div class="albumPic__overlay position-absolute top-50 start-50   "><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </picture>
+                <picture class="albumPic col-lg-2 col-md-4 col-6 position-relative" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="images/gallery-6.jpeg" alt="">
+                    <div class="albumPic__overlay position-absolute top-50 start-50   "><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </picture>
+            </div>
+        </section>
+        <!-- ==============================Album Markup============================= -->
     </main>
+    <footer>
+        <section id="footer">
+            <div class="container">
+                <div class="footerWrapper d-flex flex-lg-row flex-column gap-5 justify-content-beetween   ">
+                    <div class="footerAbout d-flex flex-column gap-4 align-items-start">
+                        <!-- copied from Navbar -->
+                        <div class="footerAboutLogo">
+                            <a class="navbar-brand align-items-center d-flex flex-column text-white" href="index.html">
+                                <span style="font-size: 28px; font-weight: bold; line-height: 100%;">Oakberry</span><span
+                                    style="font-size: 0.7rem;font-weight: bold; text-transform: uppercase;">Real Estate Agency</span>
+                            </a>
+                        </div>
+                        <!-- copied from Navbar -->
+                        <p class="footerAbout__summery fadedText">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <div class="socials mt-4 d-flex gap-3 align-items-center position-relative ">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footerLinks d-flex flex-lg-row flex-column justify-content-beetween  ">
+                        <div class="footerLinksSection">
+                            <h5>Offers</h5>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">Profiles</span>
+                            </a></ul>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">Agents</span>
+                            </a></ul>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">Locations</span>
+                            </a></ul>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">Client Supports</span>
+                            </a></ul>
+                        </div>
+                        <div class="footerLinksSection">
+                            <h5>Company</h5>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">Home</span>
+                            </a></ul>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">About</span>
+                            </a></ul>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">Blogs</span>
+                            </a></ul>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">Contact Us</span>
+                            </a></ul>
+                        </div>
+                        <div class="footerLinksSection">
+                            <h5>Quick Links</h5>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">Terms & Conditions</span>
+                            </a></ul>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">User Guide</span>
+                            </a></ul>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">Support Center</span>
+                            </a></ul>
+                            <ul class="li"><a href="#">
+                                <i class="fa-sharp fa-solid fa-angle-right"></i>
+                                <span class="fadedText ms-2">Press info</span>
+                            </a></ul>
+                        </div>
+                        <div class="footerLinksSection">
+                            <h5>Have a Question?</h5>
+                            <ul>
+                                <li class="d-flex flex-column justify-content-center align-items-start my-3"><i class="fa-regular fa-map-location-dot mb-2"></i><span class="fadedText">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                                <li class="d-flex flex-column justify-content-center align-items-start my-3"><i class="fa-regular fa-phone-rotary"></i><span class="fadedText">++ 01 782 344161</span></li>
+                                <li class="d-flex flex-column justify-content-center align-items-start my-3"><i class="fa-regular fa-paper-plane"></i><span class="fadedText">info@oakberry.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
-<script src="js/tiny-slider.js"></script>
 </html>

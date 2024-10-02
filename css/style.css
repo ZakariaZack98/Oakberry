@@ -20,6 +20,7 @@ a {
 }
 img {
   vertical-align: middle;
+  object-fit: cover;
 }
 button a {
   color: white;
@@ -37,6 +38,20 @@ button a {
 /* ===========Typography============ */
 .smallerText {
   font-size: 14px;
+}
+.sectionSubHeader {
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  font-weight: 700;
+}
+.sectionHeader {
+  font-size: 60px;
+  font-weight: 700;
+  max-width: 50%;
+}
+.fadedText {
+  color: var(--clr-text-faded);
+  line-height: 150%;
 }
 /* ============modifier============ */
 .btn {
@@ -198,6 +213,102 @@ button a {
 .btnCat:hover {
   color: white;
 }
+/* ===============featured=========== */
+#featured {
+  background-color: var(--clr-bg);
+  padding: 80px 0;
+}
+.featuredContents {
+  max-width: 90%;
+}
+.card {
+  cursor: pointer;
+}
+.cardPicture img {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  z-index: 0;
+  filter: brightness(0.5);
+  transition: var(--trn-delay);
+}
+.card:hover img{
+  filter: brightness(1);
+}
+.card img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+.cardBodyTop p{
+  color: var(--clr-text-faded);
+}
+.cardPropertyOwner img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transform: translateY(-7px);
+}
+.cardLocation {
+  font-size: 14px;
+  color: var(--clr-text-faded);
+}
+/* =============Video========== */
+#video {
+  background-image: url(/images/bg_4.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70dvh;
+  margin-bottom: 80px;
+}
+.videoWrapper {
+  height: 100%;
+}
+.videoPlayBtn {
+  border-radius: 50%;
+  font-size: 40px;
+}
+.video__paragraph {
+  line-height: 160%;
+  max-width: 50%;
+}
+
+/* ===========About Us============ */
+#about {
+  margin: 80px 0;
+}
+.aboutWrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}
+.aboutLeft__pic {
+  height: 100%;
+}
+.aboutLeft__pic img {
+  width: 100%;
+  height: 100%;
+}
+.aboutHeader {
+  max-width: 80%;
+}
+.aboutRightPic img {
+  width: 100%;
+  height: 400px;
+}
+/* ============Clients=============== */
+#clients .carousel {
+  width: 75%;
+  height: 50dvh;
+  margin: 0 auto;
+}
+
+
 
 @media (max-width: 900px) {
   .carousel-caption {
@@ -206,10 +317,11 @@ button a {
   .carouselHeader {
     font-size: 40px;
   }
-  .categoryHead * {
+  /* .categoryHead * {
     max-width: 90%;
-  }
-  .categoryHead h1 {
+  } */
+  .sectionHeader{
+    max-width: 90%;
     font-size: 30px;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -219,5 +331,11 @@ button a {
   }
   .categoryBottom {
     max-width: 100%;
+  }
+  .featuredContents {
+    max-width: 100%;
+  }
+  .card {
+    width: 100%;
   }
 }

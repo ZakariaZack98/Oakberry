@@ -556,6 +556,7 @@ button a {
   }
   .footerAbout {
     padding: 3rem;
+    max-width: 100%;
   }
   .footerLinksSection {
     width: 100%;
